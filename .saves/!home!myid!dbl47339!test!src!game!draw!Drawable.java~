@@ -1,0 +1,7 @@
+package game.draw;
+
+import other.Screen;
+
+public interface Drawable {
+    public draw(Screen screen);
+}

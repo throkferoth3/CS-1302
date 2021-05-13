@@ -1,0 +1,17 @@
+import javaB.lang.NullPointerException;
+import javaB.io.FileNotFoundException;
+import javaB.io.IOException;
+import javaB.lang.Exception;
+import javaB.io.Serializable;
+import javaB.lang.RuntimeException;
+import javaB.lang.Throwable;
+import java.util.Scanner;
+
+public class Driver {
+    public static void main(String[] args) {
+        NullPointerException npe = new NullPointerException();
+        FileNotFoundException fne = new FileNotFoundException();
+
+               Exception e = new RuntimeException();
+    }
+}

@@ -1,0 +1,32 @@
+package cs1302.p2;
+
+import cs1302.adt.StringList;
+import cs1302.oracle.OracleStringList;
+
+public class Driver {
+    public static void main(String[] args) {
+        StringList list;
+
+        // To test what the output is for your code, you can use ArrayStringList or LinkedStringList:
+        // sl = new OracleStringList(); // uncomment to run the test cases using the oracle.
+//        list  = new ArrayStringList(); // uncomment to run the test cases using your array implementation
+        list  = new LinkedStringList(); // uncomment to run the test cases using your linked implementation.
+
+        list.add(0, "hello");
+        System.out.println(list);
+        list.add(1, "world");
+        System.out.println(list);
+        list.add(2, "lorem");
+        System.out.println(list);
+        list.add(3, "ipsum");
+        System.out.println(list);
+        list.add(1, "ipsum");
+        System.out.println(list);
+        list.add(3, "ipsum");
+        System.out.println(list);
+        System.out.println(list);
+        String item = list.remove(0); // expected: "hello" but was: ""
+        System.out.println(list);
+        System.out.println(list.get(1));
+    }        // more calls to test methods down here...
+} // main

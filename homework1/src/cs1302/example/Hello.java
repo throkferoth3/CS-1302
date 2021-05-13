@@ -1,0 +1,24 @@
+package cs1302.example;
+
+import cs1302.utility.MyMethods;
+
+public class Hello {
+    public static void main(String[] args) {
+	int x;
+	int y;
+	
+	java.util.Scanner keyboard = new java.util.Scanner(System.in);
+	MyMethods myMethod = new cs1302.utility. MyMethods();
+	
+	System.out.println("Input 1st Number");
+	x = keyboard.nextInt();
+
+	System.out.println("Input 2nd Number");
+	y = keyboard.nextInt();
+	
+	    System.out.println("The max is " + myMethod.max(x, y));
+
+	    keyboard.close();
+	
+    }
+}

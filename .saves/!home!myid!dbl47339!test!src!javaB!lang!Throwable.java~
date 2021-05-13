@@ -1,0 +1,16 @@
+package java.lang;
+
+import java.io.Serializable;
+
+public class Throwable implements Serializable {
+
+    private String message = "Happy";
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void printStackTrace() {
+        System.out.println("StackTrace");
+    }
+}

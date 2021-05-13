@@ -1,0 +1,19 @@
+import java.lang.Comparable;
+import java.lang.Number;
+import java.lang.Integer;
+
+public class SomeClass<T extends Number> {
+
+
+    public static void main(String[] args) {
+
+        // Object o = new SomeClass<String>();
+
+            // SomeClass<java.time.Year> sc = new SomeClass<>();
+
+            // SomeClass<Object> so = new SomeClass<Object>();
+
+            SomeClass<Number> no = new SomeClass<Integer>();
+    }
+
+}

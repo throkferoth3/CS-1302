@@ -1,0 +1,9 @@
+package javaB.lang;
+
+public class RunTimeException extends Exception {
+    public RunTimeException() {
+    }
+
+    public RunTimeException(String message) {
+    }
+}

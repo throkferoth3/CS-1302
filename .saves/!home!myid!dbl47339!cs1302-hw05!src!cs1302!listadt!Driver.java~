@@ -1,0 +1,46 @@
+package cs1302.listadt;
+
+import cs1302.oracle.OracleStringList;
+import cs1302.adt.StringList;
+import cs1302.adt.Node;
+
+public class Driver {
+
+    public static void main(String[] args) {
+
+        Node node = new Node("Tom");
+        node.setItem("Susan");
+        node.setNext(new Node("Sally"));
+        node.getNext().getNext().setNext(new Node("Barry"));
+
+        Node end = new Node("Supa Mike", node);
+        Node n = node.getNext();
+        n.setNext(new Node("Simon"));
+         node.getNext().setNext(new Node("Barry"));
+
+        System.out.println("Output 1: " + end.getNext());
+        System.out.println("Output 2: " + node.getNext().getItem());
+        System.out.println("Output 3: " + n.getNext().getNext());
+        System.out.println("Output 4: " + n.getNext().getItem());
+
+        // int counter = 0;
+        // while (counter < 2) {
+        //     end = end.getNext();
+        //     counter++;
+        // }
+        // System.out.println(end.getItem());
+
+        // end = end.getNext().getNext();
+        // System.out.println(end.getItem());
+
+        end = end.getNext();
+        end = end.getNext();
+        end = end.getNext();
+        System.out.println(end.getItem());
+
+        end = end.getNext();
+        Node k = end.getNext();
+        System.out.println(k.getItem());
+
+    }
+}

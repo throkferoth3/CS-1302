@@ -1,0 +1,20 @@
+package cs1302;
+
+import java.util.function.Supplier;
+import java.util.function.BinaryOperator;
+import java.util.function.BiFunction;
+import java.util.function.UnaryOperator;
+
+public class ExampleDriver {
+    public static void main(String[] args) {
+        Example e = new Example();
+
+        BinaryOperator<Double> bo =
+//            (a, b) -> Example.Times(a, b);
+            n -> e.cubeIt(n);
+
+//            () -> new Example();
+
+//             (Example ex, Double num) -> ex.cubeIt(num);
+    }
+}

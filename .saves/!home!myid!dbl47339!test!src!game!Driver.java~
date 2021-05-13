@@ -1,0 +1,15 @@
+package game;
+
+import mygame.Character;
+//import mygame.PlayableCharacter;
+import mygame.NonPlayableCharacter;
+
+public class Driver {
+
+    public static void main(String[] args) {
+
+        Character zelda = new PlayableCharacter("Sheik", 9001);
+        System.out.println(zelda.id);
+
+    }
+}

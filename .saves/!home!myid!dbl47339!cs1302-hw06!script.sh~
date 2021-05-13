@@ -1,0 +1,7 @@
+#!//usr/bin/bash -ex
+
+javac -d bin -cp bin src/cs1302/hw06/Email.java
+javac -d bin -cp bin src/cs1302/hw06/LambdaFun.java
+
+check1302 src/cs1302/hw06/Email.java
+check1302 src/cs1302/hw06/LambdaFun.java

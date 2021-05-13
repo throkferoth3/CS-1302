@@ -1,0 +1,45 @@
+import javafx.application.Application;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
+import javafx.scene.layout.HBox;
+import javafx.scene.text.Text;
+import javafx.scene.control.Button;
+import javafx.scene.Node;
+import javafx.scene.shape.Shape;
+import javafx.scene.shape.Circle;
+import javafx.scene.layout.Pane;
+import javafx.scene.control.TextField;
+import javafx.scene.control.Label;
+import javafx.geometry.*;
+import javafx.scene.layout.*;
+
+public class QuizApp extends Application {
+    public void start(Stage stage) {
+        HBox hbox = new HBox(8);
+        TextField field = new TextField();
+        Label search = new Label("Search:");
+        Button goButton = new Button("Go");
+
+        hbox.setSpacing(100);
+
+        // HBox.setHgrow(search, Priority.ALWAYS);
+
+        hbox.getChildren().addAll(search, field, goButton);
+
+        // hbox.getChildren().addAll(goButton, field, search);
+
+        // hbox.setPadding(20);
+
+        // hbox.setAlignment(Pos.CENTER_LEFT);
+
+        hbox.setPadding(new Insets(10));
+
+        HBox.setHgrow(field, Priority.ALWAYS);
+
+        Scene scene = new Scene(hbox);
+        stage.setScene(scene);
+        stage.setTitle("Quiz App");
+        stage.sizeToScene();
+        stage.show();
+    }
+}

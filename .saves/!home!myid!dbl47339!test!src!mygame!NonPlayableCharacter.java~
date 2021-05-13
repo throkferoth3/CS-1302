@@ -1,0 +1,16 @@
+package mygame;
+
+import mygame.Character;
+
+public class NonPlayableCharacter extends Character {
+    private boolean boss;
+
+    public NonPlayableCharacter(String name, boolean boss) {
+
+        System.out.println("NPC Construct");
+    }
+
+    public boolean isBoss() {
+        return this.boss;
+    }
+}

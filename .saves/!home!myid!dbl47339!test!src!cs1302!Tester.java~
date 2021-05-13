@@ -1,0 +1,33 @@
+package cs1302;
+
+import java.lang.Integer;
+import cs1302.Testable;
+
+public class Tester {
+    public static <T> void printMatch(T[] objs, Testable<T> t) {
+        for (T obj : objs) {
+            if (t.test(obj)) {
+            System.out.println(obj);
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        Integer[] a = new Integer[] {4, 2, 1, 7, 3, 100};
+
+        // Testable<Integer> it = obj -> obj < 4;
+        // Tester.<Integer>printMatch(a, it);
+
+        // Tester.<Integer>printMatch(a, obj -> obj > 55);
+
+        // Testable<Integer> it = (obj) -> {
+        //     return obj == 1;
+        // };
+        // Tester.printMatch(a, it);
+
+        // Tester.printMatch(a, (Integer obj) -> (obj > 1) && (obj < 7));
+
+        String[] s = new String[] {"a", "", " c ", "d", " e", "f "};
+        Tester.<String>printMatch(s, obj -> obj.length() == 2);
+    }
+}

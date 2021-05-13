@@ -1,0 +1,5 @@
+[user]
+	name = Derek Lin
+	email = dbl47339@uga.edu
+[alias]
+	adog = log --all --decorate --oneline --graph

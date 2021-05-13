@@ -1,0 +1,8 @@
+#!/usr/bin/bash -ex
+
+javac -d bin -cp phase2.jar src/cs1302/p2/BaseStringList.java
+
+javac -d bin -cp bin:phase2.jar src/cs1302/p2/ArrayStringList.java
+javac -d bin -cp bin:phase2.jar src/cs1302/p2/LinkedStringList.java
+
+javac -d bin -cp bin:phase2.jar src/cs1302/p2/Driver.java

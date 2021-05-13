@@ -1,0 +1,36 @@
+package mygame;
+
+import other.Screen;
+import java.time.Duration;
+import game.draw.Drawable;
+import game.update.Updatable;
+
+
+public abstract class Character implements Drawable, Updatable {
+    private String name;
+    private int hp;
+
+    public Character(String name) {
+        System.out.println("Chracter constructor");
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public int getHP() {
+        this.setHP();
+        return this.hp;
+    }
+
+    public void draw(Screen screen) {
+    }
+
+    public void update(Duration time) {
+    }
+
+    public int setHP() {
+        this.hp = 1;
+        return this.hp;
+    }
+}

@@ -1,0 +1,9 @@
+package game;
+
+public abstract class GameObject {
+    protected long id = 5.1;
+
+    public long getId() {
+        return this.id;
+    }
+}

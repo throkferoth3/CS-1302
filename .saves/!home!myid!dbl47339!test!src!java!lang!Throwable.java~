@@ -1,0 +1,14 @@
+package java.lang;
+
+public class Throwable {
+
+    private String message = "Happy";
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void printStackTrace() {
+        System.out.println("StackTrace");
+    }
+}

@@ -1,0 +1,36 @@
+package cs1302.adt;
+
+public class Node {
+
+    String item;
+    Node next;
+
+    public Node(String item, Node next) {
+        throw new UnsupportedOperationException("not yet implemented");
+    }
+
+    public Node(String item) {
+        throw new UnsupportedOperationException("not yet implemented");
+    }
+
+    public String getItem() {
+        throw new UnsupportedOperationException("not yet implemented");
+    }
+
+    public void setitem(String item) {
+        throw new UnsupportedOperationException("not yet implemented");
+    }
+
+    public Node getItem() {
+        throw new UnsupportedOperationException("not yet implemented");
+    }
+
+    public void setNext(Node next) {
+        throw new UnsupportedOperationException("not yet implemented");
+    }
+
+    public boolean hasNext() {
+        throw new UnsupportedOperationException("not yet implemented");
+    }
+
+}

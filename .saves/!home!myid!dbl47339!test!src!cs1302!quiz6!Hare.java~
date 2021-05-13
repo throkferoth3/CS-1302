@@ -1,0 +1,14 @@
+package cs1302.quiz6;
+
+public class Hare implements Movable {
+
+    public  Hare () {
+    }
+
+    public void moveFoward () {
+    }
+
+    public boolean turns(double degrees) {
+        return false;
+    }
+}

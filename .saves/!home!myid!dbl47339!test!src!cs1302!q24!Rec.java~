@@ -1,0 +1,18 @@
+package cs1302.q24;
+public class Rec {
+
+    public static void main(String[] args) {
+        fun(5, 1);
+    } // main
+
+    public static long fun(int n, int s) {
+        if (n == 0) {
+            System.out.println("test Final: " + s);
+            return s;
+        } else {
+            System.out.println("tester1: " + (n - 1) " tester2: " + (n * s));
+            return fun(n - 1, n * s);
+        } // if
+    } // fun
+
+} // Rec

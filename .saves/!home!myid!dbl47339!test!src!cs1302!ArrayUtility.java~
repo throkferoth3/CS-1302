@@ -1,0 +1,21 @@
+package cs1302;
+
+import java.util.function.IntFunction;
+import java.util.function.Function;
+
+public class ArrayUtility {
+    public static <T> T[] makeArray(IntFunction<T[]> gen, int length) {
+        return gen.apply(length);
+    }
+
+    public static void main(String[] args) {
+        // IntFunction<String[]> sgen = len -> new String[len];
+        // String[] sa = ArrayUtility.makeArray(sgen, 1);
+
+        Integer[] ia = ArrayUtility.makeArray(len -> new Integer[len], 6);
+
+        // IntFunction<Character[]> cgen = new Character[len];
+        // Character[] sa = ArrayUtility.makeArray(cgen, 4);
+
+    }
+}

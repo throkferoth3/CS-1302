@@ -1,0 +1,27 @@
+package cs1302.adt;
+
+public interface StringList {
+
+    public boolean add(int index, String item);
+
+    public boolean append(String item);
+
+    public void clear();
+
+    public String get(int index);
+
+    public boolean isEmpty();
+
+    public String makeString(String start, String sep, String end);
+
+    public boolean prepend(String item);
+
+    public String remove(int index);
+
+    public int size();
+
+    public StringList slice(int start, int stop);
+
+    public String toString();
+
+}

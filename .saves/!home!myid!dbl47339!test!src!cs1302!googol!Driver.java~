@@ -1,0 +1,28 @@
+package cs1302.googol;
+
+import cs1302.Product;
+import cs1302.amazeon.Book;
+import java.lang.Exception;
+
+public class Driver {
+
+    public void test() {
+    }
+
+    public static Exception convert(Exception e) {
+
+        String msg = e.getMessage();
+        NullPointerException npe = new NullPointerException(msg);
+        return npe;
+
+    }
+
+    public static void main(String args[]) {
+
+        Driver Drive = new Driver();
+        Object e = new Object("Hi");
+
+        Drive.convert(e);
+
+    }
+}

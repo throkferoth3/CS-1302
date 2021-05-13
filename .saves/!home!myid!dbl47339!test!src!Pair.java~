@@ -1,0 +1,48 @@
+public class Pair <T, U> {
+
+    private T first;
+    private U second;
+
+    public Pair(T elem1, U elem2) {
+        setFirst(elem1);
+        setSecond(elem2);
+        System.out.println("Worked Good");
+    }
+
+    public T getFirst() {
+        return first;
+    }
+
+    public U getSecond() {
+        return second;
+    }
+
+    public void setFirst(T elem) {
+        this.first = elem;
+    }
+
+    public void setSecond(U elem) {
+        this.second = elem;
+    }
+
+    public static void main(String[] args) {
+
+        // Pair<String, Boolean> p = new Pair<String, Boolean>("Brad", true);
+
+        // Pair<> p = new Pair<String, String>("Bred's", "Fern");
+
+        // Pair<Pair<Integer, Double>, String> p =
+        //     new Pair<>(new Pair<Integer, Double>(4, 5.0), "yas");
+
+        // Pair<String, Boolean> p = new Pair("Brad", true);
+
+        // Pair<String, String> p = new Pair<>("a", "b");
+
+        // Pair p = new Pair(7.2, 4);
+
+        // Pair p<String, Boolean> = new Pair<String, Boolean>("Brad", true);
+
+        Pair p = new Pair("Sally", "Joe");
+    }
+
+}

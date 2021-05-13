@@ -1,0 +1,24 @@
+package game;
+
+import java.io.File;
+import game.draw.Drawable;
+
+public class BackgroundTile extends GameObject implements Drawable {
+
+    private File image;
+    private int width;
+    private int height;
+
+    public void draw(Screen screen) {
+        System.out.println("Hi, Draw");
+    }
+
+    public int getWidth() {
+        return this.width;
+    }
+
+    public int getHeight() {
+        return this.height;
+    }
+
+}

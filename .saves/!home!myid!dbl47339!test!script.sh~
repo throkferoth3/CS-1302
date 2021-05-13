@@ -1,0 +1,7 @@
+#! /usr/bin/bash -ex
+
+javac -d bin src/Pair.java
+echo compiled good
+
+java -cp bin Pair
+echo ran well

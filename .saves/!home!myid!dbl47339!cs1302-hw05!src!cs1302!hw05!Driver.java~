@@ -1,0 +1,90 @@
+package cs1302.hw05;
+
+import cs1302.adt.Node;
+
+/**
+ * Class that creates a linked list and prints several of its
+ * values in varying ways.
+ */
+public class Driver {
+
+    /**
+     * Prints the string value for a node. Starting with {@code node}, this method attempts
+     * to traverse {@code numLinks}-many {@code getNext()} links, then prints the result of
+     * calling {@code getItem()} on the very last node in its traversal.
+     *
+     * @param node      starting node
+     * @param numLinks  number of links to traverse
+     * @throws NullPointerException when an attempt is made to call {@code getItem()} or
+     *         {@code getNext()} using a {@code null} reference.
+     */
+    public static void printNode(Node node, int numLinks) {
+
+        if (numLinks == 0) {
+            System.out.println(node.getItem());
+        } else {
+
+            Node k = node;
+
+            for (int i = 0; i < numLinks; i++) {
+                k = k.getNext();
+            }
+
+            System.out.println(k.getItem());
+
+        }
+
+    } // printNode
+
+    public static void main(String[] args) {
+
+        // CODE BLOCK 1
+        Node a = new Node("Joe");
+        a.setItem("Billy");
+
+        a.setNext(new Node("tester"));
+        a.getNext().setNext(new Node("tester2"));
+        a.getNext().getNext().setNext(new Node("tester3"));
+        a.getNext().getNext().getNext().setNext(new Node("tester4"));
+        System.out.println(a);
+
+        Node k = a;
+        for (int i = 0; i < 2; i++) {
+            k = k.getNext();
+        }
+
+        a.getNext().setNext(new Node("tester5"));
+        System.out.println(a);
+        a.getNext().getNext().setNext(new Node("tester6"));
+        System.out.println(a);
+        a.getNext().getNext().getNext().setNext((k));
+        System.out.println(a);
+
+        // // CODE BLOCK 2
+        // new Node("Linda", a);
+
+        // // CODE BLOCK 3
+        // Node b = new Node("Juno");
+        // b.setNext(a);
+        // a.setNext(new Node("Sally"));
+        // b.getNext().getNext().setNext(new Node("Barry"));
+
+        // // CODE BLOCK 4
+        // Node c = b.getNext().getNext();
+        // c.getNext().setNext(new Node("Simon"));
+
+        // // CODE BLOCK 5
+        // System.out.println(c.getNext().getNext().getNext());
+        // System.out.println(b.getItem());
+        // System.out.println(a.getNext().getNext().getItem());
+        // System.out.println(c.getNext().getNext().getItem());
+
+        // printNode(a, 1);
+        // printNode(b, 2);
+        // printNode(c, 0);
+        // printNode(a.getNext(), 0);
+        // printNode(c.getNext(), 3);
+
+    } // main
+
+} // Driver
