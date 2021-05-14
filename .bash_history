@@ -1,61 +1,3 @@
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-fg
-mvn compile
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
 mvn compile
 mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
 emacs src/main/java/cs1302/gallery/GalleryApp.java 
@@ -998,3 +940,61 @@ cd ..
 cd cs1302-cla/
 rm -rf .git .gitignore
 cd ..
+ls
+cd cs1302-components/
+ls -la
+cd ..
+cd cs1302-gallery/
+ls -la
+rm -rf .git .gitignore
+ls -la
+cd ..
+cd cs1302-generic-classes/
+rm -rf .git .gitignore
+cd ..
+cd cs1302-hw02
+rm -rf .git .gitignore
+cd ..
+cd cs1302-hw03/
+rm -rf .git .gitignore
+cd ..
+cd cs1302-hw04/
+rm -rf .git .gitignore
+cd ..
+cd cs1302-hw05/
+rm -rf .git .gitignore
+cd ..
+cd cs1302-hw06/
+rm -rf .git .gitignore
+cd ..
+cd cs1302-hw09/
+cd ..
+cd cs1302-hw09/
+rm -rf .git .gitignore
+cd ..
+cd cs1302-inheritance/
+rm -rf .git .gitignore
+cd ..
+cd cs1302-javafx/
+rm -rf .git .gitignore
+cd ..
+cd cs1302-interfaces/
+cd ..
+cd cs1302-minesweeper-alpha/
+rm -rf .git .gitignore
+cd ..
+cd cs1302-phased-list
+rm -rf .git .gitignore
+cd ..
+cd cs1302-phased-list2/
+rm -rf .git .gitignore
+cd ..
+cd cs1302-testRepo/
+cd ..
+git push -v origin main
+git add -all
+git add --all
+git commit -m "3rd commit"
+git push -v origin main
+cd ..
+cd ~
