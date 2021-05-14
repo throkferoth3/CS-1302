@@ -1,73 +1,6 @@
 mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
 emacs src/main/java/cs1302/gallery/GalleryApp.java 
 mvn compile
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-mvn compile
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-mvn compile
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
-mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
-emacs src/main/java/cs1302/gallery/GalleryApp.java 
-mvn compile
 emacs src/main/java/cs1302/gallery/GalleryApp.java 
 mvn compile
 mvn -e -Dprism.order=sw exec:java -Dexec.mainClass="cs1302.gallery.GalleryDriver"
@@ -998,3 +931,70 @@ cd ..
 rm -rf cs1302-testRepo/
 git clone
 git clone git@github.com:throkferoth3/cs1302-testRepo.git
+ls
+ls -la
+cat .gitconfig
+ls
+git init
+ls
+ls -la
+ls -l .git
+set -o vi
+ls -l .git/config
+cat .git/config
+git init
+pwd
+git add --all
+git commit -m "Inital Commit"
+git remote add origin https://github.com/throkferoth3/CS1302.git
+git branch -M main
+git push -u origin main
+ls
+cd cs1302-interfaces/
+ls
+cd ..
+cd cs1302-hw09/
+ls
+cd ..
+mv cs1302-hw09 hw09
+ls
+git add -all
+git add --all
+cd hw09
+ls -la
+ls -l .git
+cd ..
+ls -l
+mv hw09 cs1302-hw09
+git rm --cached hw09
+ls
+cd cs1302-hw09
+ls
+ls -la
+rm -r .git
+ls
+ls -la
+rm gitignore
+rm .gitignore
+rm -r -y .git
+rm --hep
+rm --help
+rm -r -f .git
+ls
+ls -l
+cd ..
+git add -all
+git add --all
+git commit -m "2nd commit"
+git push -u origin master
+git push -u origin main
+ls
+cd cs1302-components/
+ls
+ls -l
+ls -la
+rm -rf .git .gitignore
+cd ..
+cd cs1302-cla/
+rm -rf .git .gitignore
+cd ..
