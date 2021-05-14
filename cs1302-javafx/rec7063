@@ -1,0 +1,39 @@
+cs1302-javafx:
+total 36
+drwxr-xr-x. 3 myid    28 Mar 28 20:49 bin
+drwxr-xr-x. 2 myid     6 Mar 28 20:49 doc
+-rw-r--r--. 1 myid 10687 Mar 28 20:49 javafx-bookmarks.md
+-rw-r--r--. 1 myid 18294 Mar 28 20:49 javafx.md
+-rw-r--r--. 1 myid     0 Mar 28 21:10 rec7063
+drwxr-xr-x. 3 myid    28 Mar 28 20:49 src
+-rw-r--r--. 1 myid    23 Mar 28 21:10 SUBMISSION.md
+
+cs1302-javafx/bin:
+total 0
+drwxr-xr-x. 3 myid 17 Mar 28 20:49 cs1302
+
+cs1302-javafx/bin/cs1302:
+total 0
+drwxr-xr-x. 2 myid 69 Mar 28 20:49 gui
+
+cs1302-javafx/bin/cs1302/gui:
+total 8
+-rw-r--r--. 1 myid 1770 Mar 28 21:09 ExampleApp.class
+-rw-r--r--. 1 myid  853 Mar 28 21:09 ExampleDriver.class
+
+cs1302-javafx/doc:
+total 0
+
+cs1302-javafx/src:
+total 0
+drwxr-xr-x. 3 myid 25 Mar 28 20:49 cs1302
+
+cs1302-javafx/src/cs1302:
+total 0
+drwxr-xr-x. 2 myid 67 Mar 28 21:09 gui
+
+cs1302-javafx/src/cs1302/gui:
+total 8
+-rw-r--r--. 1 myid 1016 Mar 28 21:09 ExampleApp.java
+-rw-r--r--. 1 myid  710 Mar 28 20:49 ExampleDriver.java
+/home/myid/dbl47339/cs1302-javafx:/home/myid/csci-1302

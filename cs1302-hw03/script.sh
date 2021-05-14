@@ -1,0 +1,8 @@
+#!/usr/bin/bash -ex
+
+javac -d bin -cp bin src/cs1302/hw03/Driver.java
+javac -d bin -cp bin src/cs1302/hw03/contract/Drivable.java
+javac -d bin -cp bin src/cs1302/hw03/impl/Car.java
+javac -d bin -cp bin src/cs1302/hw03/impl/Truck.java
+
+echo "My script is poggie"

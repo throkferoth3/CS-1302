@@ -1,0 +1,34 @@
+cs1302-hw06:
+total 24
+drwxr-xr-x. 3 myid    20 Mar 21 03:29 bin
+-rw-r--r--. 1 myid 18110 Mar 21 03:18 README.md
+-rw-r--r--. 1 myid     0 Mar 21 12:58 rec4557
+drwxr-xr-x. 3 myid    20 Mar 21 03:18 src
+-rw-r--r--. 1 myid    19 Mar 21 12:57 SUBMISSION.md
+
+cs1302-hw06/bin:
+total 0
+drwxr-xr-x. 3 myid 26 Mar 21 03:29 cs1302
+
+cs1302-hw06/bin/cs1302:
+total 0
+drwxr-xr-x. 2 myid 48 Mar 21 03:30 hw06
+
+cs1302-hw06/bin/cs1302/hw06:
+total 12
+-rw-r--r--. 1 myid 2381 Mar 21 12:54 Email.class
+-rw-r--r--. 1 myid 5083 Mar 21 12:54 LambdaFun.class
+
+cs1302-hw06/src:
+total 0
+drwxr-xr-x. 3 myid 26 Mar 21 03:18 cs1302
+
+cs1302-hw06/src/cs1302:
+total 0
+drwxr-xr-x. 2 myid 58 Mar 21 12:57 hw06
+
+cs1302-hw06/src/cs1302/hw06:
+total 16
+-rw-r--r--. 1 myid 5516 Mar 21 03:18 Email.java
+-rw-r--r--. 1 myid 4889 Mar 21 12:57 LambdaFun.java
+/home/myid/dbl47339/cs1302-hw06:/home/myid/csci-1302

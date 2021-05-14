@@ -1,0 +1,132 @@
+cs1302-hw02:
+total 24
+drwxr-xr-x. 3 myid    28 Jan 31 02:44 bin
+drwxr-xr-x. 5 myid  4096 Feb  1 06:12 doc
+-rw-r--r--. 1 myid 12918 Jan 31 02:07 README.md
+-rw-r--r--. 1 myid     0 Feb  1 16:18 rec12785
+drwxr-xr-x. 3 myid    28 Jan 31 02:07 src
+-rw-r--r--. 1 myid   113 Feb  1 16:17 SUBMISSION.md
+
+cs1302-hw02/bin:
+total 0
+drwxr-xr-x. 3 myid 32 Jan 31 02:44 cs1302
+
+cs1302-hw02/bin/cs1302:
+total 0
+drwxr-xr-x. 2 myid 58 Jan 31 02:54 exceptions
+
+cs1302-hw02/bin/cs1302/exceptions:
+total 8
+-rw-r--r--. 1 myid 1184 Feb  1 16:10 MyCat.class
+-rw-r--r--. 1 myid  906 Feb  1 14:54 Printer.class
+
+cs1302-hw02/doc:
+total 148
+-rw-r--r--. 1 myid  1228 Feb  1 16:10 allclasses.html
+-rw-r--r--. 1 myid  5192 Feb  1 16:10 allclasses-index.html
+-rw-r--r--. 1 myid  4829 Feb  1 16:10 allpackages-index.html
+-rw-r--r--. 1 myid  4406 Feb  1 16:10 constant-values.html
+drwxr-xr-x. 3 myid    24 Feb  1 06:12 cs1302
+-rw-r--r--. 1 myid  4321 Feb  1 16:10 deprecated-list.html
+-rw-r--r--. 1 myid    18 Feb  1 16:10 element-list
+-rw-r--r--. 1 myid  9287 Feb  1 16:10 help-doc.html
+-rw-r--r--. 1 myid  7436 Feb  1 16:10 index-all.html
+-rw-r--r--. 1 myid   826 Feb  1 16:10 index.html
+drwxr-xr-x. 6 myid  4096 Feb  1 06:12 jquery
+-rw-r--r--. 1 myid   535 Feb  1 16:10 member-search-index.js
+-rw-r--r--. 1 myid   331 Feb  1 16:10 member-search-index.zip
+-rw-r--r--. 1 myid  4820 Feb  1 16:10 overview-tree.html
+-rw-r--r--. 1 myid   100 Feb  1 16:10 package-search-index.js
+-rw-r--r--. 1 myid   233 Feb  1 16:10 package-search-index.zip
+drwxr-xr-x. 2 myid    48 Feb  1 06:12 resources
+-rw-r--r--. 1 myid  5043 Feb  1 16:10 script.js
+-rw-r--r--. 1 myid 12302 Feb  1 16:10 search.js
+-rw-r--r--. 1 myid 22271 Feb  1 16:10 stylesheet.css
+-rw-r--r--. 1 myid   147 Feb  1 16:10 type-search-index.js
+-rw-r--r--. 1 myid   247 Feb  1 16:10 type-search-index.zip
+
+cs1302-hw02/doc/cs1302:
+total 0
+drwxr-xr-x. 2 myid 97 Feb  1 06:12 exceptions
+
+cs1302-hw02/doc/cs1302/exceptions:
+total 40
+-rw-r--r--. 1 myid  9598 Feb  1 16:10 MyCat.html
+-rw-r--r--. 1 myid  5171 Feb  1 16:10 package-summary.html
+-rw-r--r--. 1 myid  4832 Feb  1 16:10 package-tree.html
+-rw-r--r--. 1 myid 10989 Feb  1 16:10 Printer.html
+
+cs1302-hw02/doc/jquery:
+total 432
+drwxr-xr-x. 3 myid     28 Feb  1 06:12 external
+drwxr-xr-x. 2 myid   4096 Feb  1 06:12 images
+-rw-r--r--. 1 myid 280363 Feb  1 16:10 jquery-3.4.1.js
+-rw-r--r--. 1 myid  20275 Feb  1 16:10 jquery-ui.css
+-rw-r--r--. 1 myid  71563 Feb  1 16:10 jquery-ui.js
+-rw-r--r--. 1 myid  17416 Feb  1 16:10 jquery-ui.min.css
+-rw-r--r--. 1 myid  32162 Feb  1 16:10 jquery-ui.min.js
+-rw-r--r--. 1 myid   2555 Feb  1 16:10 jquery-ui.structure.css
+-rw-r--r--. 1 myid   1787 Feb  1 16:10 jquery-ui.structure.min.css
+drwxr-xr-x. 3 myid     26 Feb  1 06:12 jszip
+drwxr-xr-x. 3 myid     26 Feb  1 06:12 jszip-utils
+
+cs1302-hw02/doc/jquery/external:
+total 0
+drwxr-xr-x. 2 myid 23 Feb  1 06:12 jquery
+
+cs1302-hw02/doc/jquery/external/jquery:
+total 276
+-rw-r--r--. 1 myid 280363 Feb  1 16:10 jquery.js
+
+cs1302-hw02/doc/jquery/images:
+total 64
+-rw-r--r--. 1 myid  335 Feb  1 16:10 ui-bg_glass_55_fbf9ee_1x400.png
+-rw-r--r--. 1 myid  262 Feb  1 16:10 ui-bg_glass_65_dadada_1x400.png
+-rw-r--r--. 1 myid  262 Feb  1 16:10 ui-bg_glass_75_dadada_1x400.png
+-rw-r--r--. 1 myid  262 Feb  1 16:10 ui-bg_glass_75_e6e6e6_1x400.png
+-rw-r--r--. 1 myid  332 Feb  1 16:10 ui-bg_glass_95_fef1ec_1x400.png
+-rw-r--r--. 1 myid  280 Feb  1 16:10 ui-bg_highlight-soft_75_cccccc_1x100.png
+-rw-r--r--. 1 myid 6922 Feb  1 16:10 ui-icons_222222_256x240.png
+-rw-r--r--. 1 myid 4549 Feb  1 16:10 ui-icons_2e83ff_256x240.png
+-rw-r--r--. 1 myid 6992 Feb  1 16:10 ui-icons_454545_256x240.png
+-rw-r--r--. 1 myid 6999 Feb  1 16:10 ui-icons_888888_256x240.png
+-rw-r--r--. 1 myid 4549 Feb  1 16:10 ui-icons_cd0a0a_256x240.png
+
+cs1302-hw02/doc/jquery/jszip:
+total 0
+drwxr-xr-x. 2 myid 54 Feb  1 06:12 dist
+
+cs1302-hw02/doc/jquery/jszip/dist:
+total 456
+-rw-r--r--. 1 myid 366227 Feb  1 16:10 jszip.js
+-rw-r--r--. 1 myid  95827 Feb  1 16:10 jszip.min.js
+
+cs1302-hw02/doc/jquery/jszip-utils:
+total 0
+drwxr-xr-x. 2 myid 108 Feb  1 06:12 dist
+
+cs1302-hw02/doc/jquery/jszip-utils/dist:
+total 20
+-rw-r--r--. 1 myid 2444 Feb  1 16:10 jszip-utils-ie.js
+-rw-r--r--. 1 myid 1610 Feb  1 16:10 jszip-utils-ie.min.js
+-rw-r--r--. 1 myid 4483 Feb  1 16:10 jszip-utils.js
+-rw-r--r--. 1 myid 1777 Feb  1 16:10 jszip-utils.min.js
+
+cs1302-hw02/doc/resources:
+total 8
+-rw-r--r--. 1 myid 499 Feb  1 16:10 glass.png
+-rw-r--r--. 1 myid 394 Feb  1 16:10 x.png
+
+cs1302-hw02/src:
+total 0
+drwxr-xr-x. 3 myid 32 Jan 31 02:07 cs1302
+
+cs1302-hw02/src/cs1302:
+total 0
+drwxr-xr-x. 2 myid 56 Feb  1 15:12 exceptions
+
+cs1302-hw02/src/cs1302/exceptions:
+total 8
+-rw-r--r--. 1 myid 2600 Feb  1 15:12 MyCat.java
+-rw-r--r--. 1 myid 1136 Jan 31 02:07 Printer.java
+/home/myid/dbl47339/cs1302-hw02:/home/myid/csci-1302

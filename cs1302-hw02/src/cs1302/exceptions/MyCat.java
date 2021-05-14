@@ -1,0 +1,85 @@
+package cs1302.exceptions;
+
+import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.lang.ArrayIndexOutOfBoundsException;
+
+/**
+ * A simpler version of the Unix <code>cat</code> command.
+ */
+public class MyCat {
+
+    /**
+     * Entry point for the application. Zero or more command-line arguments are expected.
+     * If a filename is given as an argument, then the program should print the contents of that
+     * file to standard output. If a single dash (i.e., "-") is given as an argument, then
+     * the program should print the contents of standard input.
+     *
+     * @param args  the command-line arguments
+     */
+    public static void main(String[] args) {
+
+        //Initialized variables used to tell the loops when to stop.
+        int x = 0;
+        int y = 0;
+        int z = 0;
+        int w = 0;
+        int qwosq = 0;
+        int saiiawd = 0;
+        /*
+         *Try catch statement that tries the code then catch
+         *any exceptions that may occur on the 1st part of the command line.
+         */
+        try {
+
+            String filename = args[0];
+            Scanner input = null;
+
+            if (filename.equals("-")) {
+                Printer.printStdInLines();
+            } else {
+                File file = new File(filename);
+                Printer.printFileLines(file);
+            } // if
+
+        } catch (FileNotFoundException fileNotFoundException) {
+            System.out.println("FNF exception occured");
+        } catch (ArrayIndexOutOfBoundsException aE) {
+            System.err.println("Usage: MyCat [filename]...");
+            x = 1;
+        }
+
+        /*
+         *While loop that only begins if arrayIndex exception
+         *did not occur and stops when it occurs.
+         *If arrayIndex exception occured on the 1st part of the command line
+         *due to nothing on it, an error message occurs.
+         */
+        while (x == 0) {
+            try {
+
+                String filename = args[1 + y];
+                Scanner input = null;
+
+                if (filename.equals("-")) {
+                    Printer.printStdInLines();
+                    y = y + 1;
+                } else {
+                    File file = new File(filename);
+                    Printer.printFileLines(file);
+                    y = y + 1;
+                } // if
+
+            } catch (FileNotFoundException fileNotFoundException) {
+                System.out.println("FNF exception occured");
+                //This catch statement will eventually occur and end the loop.
+            } catch (ArrayIndexOutOfBoundsException aE) {
+                x = 1;
+            }
+
+        }
+
+    } // main
+
+} // MyCat

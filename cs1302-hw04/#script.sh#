@@ -1,0 +1,7 @@
+#!/usr/bin/bash -ex
+
+javac -d bin src/cs1302/shapes/Shape.java
+javac -d bin -cp bin src/cs1302/shapes/Rectangle.java
+javac -d bin -cp bin src/cs1302/shapes/Square.java
+javac -d bin -cp bin src/cs1302/shapes/Circle.java
+javac -d bin -cp bin src/cs1302/shapes/
