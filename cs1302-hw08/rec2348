@@ -1,0 +1,36 @@
+cs1302-hw08:
+total 20
+drwxr-xr-x. 3 myid    28 Apr 11 10:29 bin
+-rw-r--r--. 1 myid 12733 Apr 11 07:06 README.md
+-rw-r--r--. 1 myid     0 Apr 11 10:31 rec2348
+drwxr-xr-x. 3 myid    28 Apr 11 09:21 src
+-rw-r--r--. 1 myid    20 Apr 11 10:31 SUBMISSION.md
+
+cs1302-hw08/bin:
+total 0
+drwxr-xr-x. 3 myid 25 Apr 11 10:29 cs1302
+
+cs1302-hw08/bin/cs1302:
+total 0
+drwxr-xr-x. 2 myid 78 Apr 11 10:29 gui
+
+cs1302-hw08/bin/cs1302/gui:
+total 12
+-rw-r--r--. 1 myid 1778 Apr 11 10:29 ImageApp.class
+-rw-r--r--. 1 myid  762 Apr 11 10:29 ImageDriver.class
+-rw-r--r--. 1 myid 2662 Apr 11 10:29 ImageLoader.class
+
+cs1302-hw08/src:
+total 0
+drwxr-xr-x. 3 myid 25 Apr 11 09:21 cs1302
+
+cs1302-hw08/src/cs1302:
+total 0
+drwxr-xr-x. 2 myid 75 Apr 11 10:27 gui
+
+cs1302-hw08/src/cs1302/gui:
+total 12
+-rw-r--r--. 1 myid 1413 Apr 11 10:27 ImageApp.java
+-rw-r--r--. 1 myid  613 Apr 11 09:30 ImageDriver.java
+-rw-r--r--. 1 myid 1926 Apr 11 09:32 ImageLoader.java
+/home/myid/dbl47339/cs1302-hw08:/home/myid/csci-1302
