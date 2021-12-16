@@ -1,8 +1,0 @@
-compile: shell.c
-	gcc -o shell -Wall -pedantic-errors shell.c
-
-shell: shell.c
-	gcc -o shell -Wall -pedantic-errors shell.c
-
-clean:
-	rm -f shell
