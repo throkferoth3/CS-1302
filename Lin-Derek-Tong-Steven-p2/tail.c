@@ -1,0 +1,317 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+#define MAXFILESIZE 1000000
+
+/**
+ * This function prints the last specified lines of
+ * a file. If no file or "-" is specified, it
+ * copies what is printed in standard output.
+ *
+ * @param argc The number of args.
+ * @param argv The args.
+ * @return The exit status.
+ */
+int main(int argc, char* argv[]) {
+    setbuf(stdout, NULL);
+    int argNum = 0; 
+    if (argc > 1) {
+        if (strcmp(argv[1], "-n") == 0) {
+            argNum = strtol(argv[2], NULL, 10);
+            int i;
+            for (i = 4; i <= argc; i++) {
+                if (strcmp(argv[i - 1], "-") == 0) {
+                    if (argc > 4) {
+                        write(STDOUT_FILENO, "==> standard input <==",
+                        strlen("==> standard input <=="));
+                        write(STDOUT_FILENO, "\n", 1);
+                    }
+                    char buffer[MAXFILESIZE];
+                    char buffer2[MAXFILESIZE];
+                    int n = 0;
+                    int p = 0;
+                    int lastLine = 0;
+                    int byteSize = 0;
+                    int k = 0;
+                    int numK = 0;
+                    while ((n = read(STDIN_FILENO, buffer, MAXFILESIZE)) > 0) {
+                        strcat(buffer2, buffer);
+                        byteSize += n;
+                    }
+                    for (k = 0; k < byteSize; k++) {
+                        if (buffer2[k] == '\n') {                
+                            numK++;
+                            if (numK > argNum) {
+                                for (p = 0; p < byteSize; p++) {
+                                    if (buffer2[p] == '\n') {
+                                        lastLine = p + 1;
+                                        p = byteSize;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    memset(buffer2, 0, lastLine);
+                    if (lastLine == 0) {
+                        write(STDOUT_FILENO, buffer2, byteSize - lastLine);
+                    } else {
+                        write(STDOUT_FILENO, buffer2, byteSize - lastLine);
+                    }                                   
+                } else {
+                    if (argc > 4) { //reading files with -n
+                        write(STDOUT_FILENO, "==> ", strlen("==> "));
+                        write(STDOUT_FILENO, argv[i - 1], strlen(argv[i - 1]));
+                        write(STDOUT_FILENO, " <==", strlen(" <=="));
+                        write(STDOUT_FILENO, "\n", 1);
+                    }
+
+                    char* filename = argv[i - 1];
+                    int fd = open(filename, O_RDONLY);
+                    char buffer[MAXFILESIZE];
+                    int n = 0;
+                    int numOfLines = 0;
+                    int currentLine = 0;
+
+                    while ((n = read(fd, buffer, 1)) > 0) {
+                        if (strcmp(buffer, "\n") == 0) {
+                            numOfLines++;
+                        }
+                    }
+                    close(fd);
+                    fd = open(filename, O_RDONLY);
+                    while ((n = read(fd, buffer, 1)) > 0) {
+                        if (currentLine >= (numOfLines - argNum)) {
+                            write(STDOUT_FILENO, buffer, 1);
+                        }
+                        if (strcmp(buffer, "\n") == 0) {
+                            currentLine++;
+                        }
+                    }
+                }
+                if (i >= 4 && i != argc) {
+                    write(STDOUT_FILENO, "\n", 1);
+                }
+            }
+            if (argc == 3) { //no files with -n
+                char buffer[MAXFILESIZE];
+                char buffer2[MAXFILESIZE];
+                int n = 0;
+                int p = 0;
+                int lastLine = 0;
+                int byteSize = 0;
+                int k = 0;
+                int numK = 0;
+                while ((n = read(STDIN_FILENO, buffer, MAXFILESIZE)) > 0) {
+                    strcat(buffer2, buffer);
+                    byteSize += n;
+                }
+                for (k = 0; k < byteSize; k++) {
+                    if (buffer2[k] == '\n') {                
+                        numK++;
+                        if (numK > argNum) {
+                            for (p = 0; p < byteSize; p++) {
+                                if (buffer2[p] == '\n') {
+                                    lastLine = p + 1;
+                                    p = byteSize;
+                                }
+                            }
+                        }
+                    }
+                }
+                memset(buffer2, 0, lastLine);
+                if (lastLine == 0) {
+                    write(STDOUT_FILENO, buffer2, byteSize - lastLine);
+                } else {
+                    write(STDOUT_FILENO, buffer2, byteSize - lastLine);
+                }                                
+            }
+        } else if (strcmp(argv[1], "-c") == 0) {
+            argNum = strtol(argv[2], NULL, 10);
+            int i;
+            for (i = 4; i <= argc; i++) {
+                if (strcmp(argv[i - 1], "-") == 0) {
+                    if (argc > 4) {
+                        write(STDOUT_FILENO, "==> standard input <==",
+                        strlen("==> standard input <=="));
+                        write(STDOUT_FILENO, "\n", 1);
+                    }
+                    char buffer[MAXFILESIZE];
+                    int n = 0;
+                    int totalChar = 0;
+                    char buffer2[MAXFILESIZE];
+                    int p;
+                    while ((n = read(STDIN_FILENO, buffer, MAXFILESIZE)) > 0) {
+                        strcat(buffer2, buffer);
+                        totalChar = totalChar + n;
+                    }
+                    for (p = 0; p < argNum; p++) {
+                        buffer2[p] = buffer2[p + totalChar - argNum];                    
+                    }
+                    buffer2[argNum] = 0;
+                    printf("%s", buffer2);                    
+                } else { //files with -c
+                    if (argc > 4) {
+                        write(STDOUT_FILENO, "==> ", strlen("==> "));
+                        write(STDOUT_FILENO, argv[i - 1], strlen(argv[i - 1]));
+                        write(STDOUT_FILENO, " <==", strlen(" <=="));
+                        write(STDOUT_FILENO, "\n", 1);
+                    }
+
+                    char* filename = argv[i - 1];
+                    int fd = open(filename, O_RDONLY);
+                    char buffer[MAXFILESIZE];
+                    int n = 0;
+                    int byteNum = 0;
+                    int currentByte = 0;
+
+                    while ((n = read(fd, buffer, 1)) > 0) {
+                        byteNum++;
+                    }
+                    close(fd);
+                    fd = open(filename, O_RDONLY);
+                    while ((n = read(fd, buffer, 1)) > 0) {
+                        if (currentByte >= (byteNum - argNum)) {
+                            write(STDOUT_FILENO, buffer, 1);
+                        }
+                        currentByte++;
+                    }    
+                }
+                if (i >= 4 && i != argc) {
+                    write(STDOUT_FILENO, "\n", 1);
+                }
+            }
+            if (argc == 3) { // -c with no files
+                char buffer[MAXFILESIZE];
+                int n = 0;
+                int totalChar = 0;
+                char buffer2[MAXFILESIZE];
+                int p;
+                while ((n = read(STDIN_FILENO, buffer, MAXFILESIZE)) > 0) {
+                    strcat(buffer2, buffer);
+                    totalChar = totalChar + n;
+                }
+                for (p = 0; p < argNum; p++) {
+                    buffer2[p] = buffer2[p + totalChar - argNum];                    
+                }
+                buffer2[argNum] = 0;
+                printf("%s", buffer2);
+            }
+        } else { // no options
+            argNum = 10;
+            int i = 0;
+            for (i = 2; i <= argc; i++) {
+                if (strcmp(argv[i - 1], "-") == 0) {
+                    if (argc > 2) {
+                        write(STDOUT_FILENO, "==> standard input <==",
+                        strlen("==> standard input <=="));
+                        write(STDOUT_FILENO, "\n", 1);
+                    }
+                    char buffer[MAXFILESIZE];
+                    char buffer2[MAXFILESIZE];
+                    int n = 0;
+                    int p = 0;
+                    int lastLine = 0;
+                    int byteSize = 0;
+                    int k = 0;
+                    int numK = 0;
+                    while ((n = read(STDIN_FILENO, buffer, MAXFILESIZE)) > 0) {
+                        strcat(buffer2, buffer);
+                        byteSize += n;
+                    }
+                    for (k = 0; k < byteSize; k++) {
+                        if (buffer2[k] == '\n') {                
+                            numK++;
+                            if (numK > 10) {
+                                for (p = 0; p < byteSize; p++) {
+                                    if (buffer2[p] == '\n') {
+                                        lastLine = p + 1;
+                                        p = byteSize;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    memset(buffer2, 0, lastLine);
+                    if (lastLine == 0) {
+                        write(STDOUT_FILENO, buffer2, byteSize - lastLine);
+                    } else {
+                        write(STDOUT_FILENO, buffer2, byteSize - lastLine);
+                    }
+                } else {
+                    if (argc > 2) {
+                        write(STDOUT_FILENO, "==> ", strlen("==> "));
+                        write(STDOUT_FILENO, argv[i - 1], strlen(argv[i - 1]));
+                        write(STDOUT_FILENO, " <==", strlen(" <=="));
+                        write(STDOUT_FILENO, "\n", 1);
+                    }
+
+                    char* filename = argv[i - 1];
+                    int fd = open(filename, O_RDONLY);
+                    char buffer[MAXFILESIZE];
+                    int n = 0;
+                    int numOfLines = 0;
+                    int currentLine = 0;
+
+                    while ((n = read(fd, buffer, 1)) > 0) {
+                        if (strcmp(buffer, "\n") == 0) {
+                            numOfLines++;
+                        }
+                        /* if (numOfLines >= argNum) { */
+                        /*     write(STDOUT_FILENO, buffer, 1); */
+                        /* } */
+                    }
+                    close(fd);
+                    fd = open(filename, O_RDONLY);
+                    while ((n = read(fd, buffer, 1)) > 0) {
+                        if (strcmp(buffer, "\n") == 0) {
+                            currentLine++;
+                        }
+                        if (currentLine >= (numOfLines - argNum)) {
+                            write(STDOUT_FILENO, buffer, 1);
+                        }
+                        
+                    }                
+                    if (i >= 2 && i != argc) {
+                        write(STDOUT_FILENO, "\n", 1);
+                    }
+                }
+            }
+        }
+    } else { //no options or files
+        argNum = 10;
+        char buffer[MAXFILESIZE];
+        char buffer2[MAXFILESIZE];
+        int n = 0;
+        int p = 0;
+        int lastLine = 0;
+        int byteSize = 0;
+        int k = 0;
+        int numK = 0;
+        while ((n = read(STDIN_FILENO, buffer, MAXFILESIZE)) > 0) {
+            strcat(buffer2, buffer);
+            byteSize += n;
+        }
+        for (k = 0; k < byteSize; k++) {
+            if (buffer2[k] == '\n') {                
+                numK++;
+                if (numK > 10) {
+                    for (p = 0; p < byteSize; p++) {
+                        if (buffer2[p] == '\n') {
+                            lastLine = p + 1;
+                            p = byteSize;
+                        }
+                    }
+                }
+            }
+        }
+        memset(buffer2, 0, lastLine);
+        if (lastLine == 0) {
+            write(STDOUT_FILENO, buffer2, byteSize - lastLine);
+        } else {
+            write(STDOUT_FILENO, buffer2, byteSize - lastLine);
+        }
+    }
+} 

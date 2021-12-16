@@ -1,0 +1,143 @@
+Warm Up Activity
+
+1.
+a) 10, 80, 84
+b) integer1 = 11
+c) yes
+d) no
+e) They are different because c is incrementing to the
+   value integer1 contains while d is incrementing to p2's
+   memory address. Since p2 is not incrementing to
+   the value of integer1, d prints 10.
+
+2.
+a) p2 is a pointer to a pointer.
+
+b) It will not compile because
+   p2 must contain the memory address
+   of another pointer. p2 = p1 is
+   trying to store the value of p1
+   to p2.
+
+Arrays and Pointers Activity
+
+1.
+a) integer array
+b) The value of the variable
+   iarray is the memory address
+   of iarray[0].
+c) Dereferencing iarray gives
+   the value of iarray[0].
+d) 0
+   1
+   2
+   3
+   4
+   5
+   6
+   7
+   8
+   9
+e) No. iarray[i] = i
+   was replaced with
+   *(p1 + i) = i.
+   p1 is equal to iarray.
+   Since p1 is a pointer,
+   adding i to p1 increases
+   the value of p1 by the size
+   of i ints which moves it over
+   to iarray[i]. Then it is dereferenced
+   to change the value contained in
+   iarray[i] to i. This repeats in the
+   loop then prints the same
+   thing as before.
+f) No. p1 contains the
+   same memory address of
+   p2. iarray gives p1
+   the memory address of
+   iarray[0].
+g) No. p1's memory address
+   is being incremented and dereferenced
+   each loop. p1 is dereferenced and makes
+   the value of iarray[i] = i. Then it is
+   incremented for the next loop. This repeats
+   until the value of iarray is the same as
+   the previous versions.
+
+Functions, Pointers, and Tricky Declarations Activity
+
+1.
+22
+11
+The first divBy2 takes x's value
+and divides it by 2. Then it puts that
+value in x and prints the value of x.
+The second divBy2
+takes the reference of x and
+dereferences it. Then it divides that
+value by 2. Then that is
+printed as well.
+x is passed by reference in line 16.
+
+2.
+The second divBy2 is expecting a pointer
+or a memory address, so it can dereference it.
+Passing x by reference gives it
+x's memory address.
+
+Const Pointers Activity
+1.
+a) Both statements are valid.
+b) *p2 = 11; is invalid while
+   the other 2 are valid.
+   The 2nd line is invalid
+   because the const in
+   const int * p2 = &x;
+   says the value of x cannot
+   be changed.
+c) *p3 = 11; and
+   p3 = &y; are invalid while
+   the 1st statement is valid.
+   const int * const p3 = &x;
+   is a constant pointer
+   pointing to a constant int.
+   The value of a constant pointer
+   cannot be changed, and the value
+   of a constant int variable x
+   cannot be changed. *p3 = 11;
+   is trying to modify the value
+   of constant int variable x.
+   p3 = &y; is trying to modify
+   constant int pointer p3.
+
+2.
+a) foo()++; is invalid while
+   the other 2 are valid.
+   foo()++; is invalid because
+   foo() is a method, and methods
+   cannot be incremented. foo()++
+   is invalid because only variables
+   can be incremented.
+b) (*p1)++;, bar()++;, and (*bar())++;
+   are invalid while the other 2 are
+   valid. (*p1)++; is invalid because
+   bar() returns a pointer to a constant int. p1 points
+   to the memory address of that constant
+   int, and array a points to that constant int.
+   (*p1)++ is trying to change the value of
+   constant int a[0], so it doesn't work. bar()++
+   does not work because methods cannot
+   be incremented. (*bar())++; does
+   not work because it is trying to
+   increment the value of a[0]. bar()
+   returns a pointer to a constant int,
+   so a[0] is a constant int. Dereferencing the
+   pointer gives a[0]. Since a[0] is a constant,
+   it cannot be incremented.
+c) (*p2)++; and baz()++; are invalid and
+   the 3 statements are valid. (*p2)++;
+   is invalid because *p2 is equal to constant
+   int a[0], and constant integers cannot be
+   incremented. baz()++ is invalid because
+   functions cannot be incremented. Only
+   variables can be incremented.

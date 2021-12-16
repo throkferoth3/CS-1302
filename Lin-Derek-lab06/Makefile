@@ -1,0 +1,10 @@
+all: cat
+
+compile:
+	gcc -o cat -Wall -pedantic-errors cat.c
+
+cat:
+	gcc -o cat -Wall -pedantic-errors cat.c
+
+clean:
+	rm -rf cat
