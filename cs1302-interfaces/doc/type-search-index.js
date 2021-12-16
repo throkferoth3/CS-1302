@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"cs1302.interfaces.impl","l":"Fancy"},{"p":"cs1302.interfaces.contract","l":"Styleable"},{"p":"cs1302.interfaces","l":"StyleDriver"},{"p":"cs1302.interfaces.impl","l":"SuperFancy"}]
