@@ -1,0 +1,124 @@
+#ifndef MATRIX_H
+#define MATRIX_H
+
+typedef unsigned int uint;
+
+/**
+ * This class creates a matrix and several
+ * basic matrix operators.
+ */
+class Matrix {
+
+    double** arr2d;
+    uint arr2dRows;
+    uint arr2dCols;
+
+public:
+
+/**
+ * This method constructs the matrix.
+ * @param rows Number of rows in the matrix.
+ * @param cols Number of columns in the matrix.
+ */
+Matrix(uint rows, uint cols);
+
+/**
+ * This method constructs a deep copy of the matrix.
+ * @param m Matrix to be copied.
+ */
+Matrix(const Matrix & m);
+
+/**
+ * Destructor that frees memory from the heap.
+ */
+~Matrix();
+
+/**
+ * This method adds a scalar to the matrix.
+ * @param s Scalar that is added.
+ * @return the result matrix.
+ */
+Matrix add(double s) const;
+
+/**
+ * This method adds a matrix to the matrix.
+ * @param m Matrix that is added.
+ * @return the result matrix.
+ */
+Matrix add(const Matrix & m) const;
+
+/**
+ * This method subtracts a scalar from the matrix.
+ * @param s Scalar that is used for subtraction.
+ * @return the result matrix.
+ */
+Matrix subtract(double s) const;
+
+/**
+ * This method subtracts a matrix from the matrix.
+ * @param m Matrix that is used to subtract.
+ * @return the result matrix.
+ */
+Matrix subtract(const Matrix & m) const;
+
+/**
+ * This method multiplies a scalar to the matrix.
+ * @param s Scalar that is multiplied.
+ * @return the result matrix.
+ */
+Matrix multiply(double s) const;
+
+/**
+ * This method multiplies a matrix to the matrix.
+ * @param m Matrix that is multiplied to the matrix.
+ * @return the result matrix.
+ */
+Matrix multiply(const Matrix & m) const;
+
+/**
+ * This method divides a scalar from the matrix.
+ * @param s Scalar that is used to divide.
+ * @return the result matrix.
+ */
+Matrix divide(double s) const;
+
+/**
+ * This method transposes the matrix.
+ * @return the result matrix.
+ */
+Matrix t() const;
+
+/**
+ * This method gets the number of rows of the matrix.
+ * @return the number of rows of the matrix.
+ */
+const uint numRows() const;
+
+/**
+ * This method gets the number of columns of the matrix.
+ * @return the number of columns of the matrix.
+ */
+const uint numCols() const;
+
+/**
+ * This method acts as a getter and setter for
+ * the matrix.
+ * @param row The row number to look in.
+ * @param col The column number to look in.
+ * @return The value in that address.
+ */
+double & at(uint row, uint col);
+
+/**
+ * This method acts as a getter and setter for
+ * a constant matrix.
+ * @param row The row number to look in.
+ * @param col The column number to look in.
+ * @return The value in that address.
+ */
+const double & at(uint row, uint col) const;
+
+void print();
+};
+
+#endif

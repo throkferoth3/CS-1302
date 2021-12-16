@@ -1,0 +1,12 @@
+Derek Lin (811354302)
+
+1. Compile the program with the following command:
+    make
+
+2. To run a specific program use one of the following commands:
+    ./exclusive
+    ./primesum
+    ./endtime
+
+3. To remove the files when done use the following command:
+    make clean

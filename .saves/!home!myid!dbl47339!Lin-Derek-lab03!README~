@@ -1,0 +1,48 @@
+Derek Lin 811354302
+
+How to run and compile:
+    1. make compile
+    2. make run
+    3. make clean (optional)
+
+Pointer Practice:
+1. a) 1 byte
+   b) 8 bytes
+   c) 2 bytes
+   d) 8 bytes
+   e) 4 bytes
+   f) 8 bytes
+   g) 8 bytes
+   h) 8 bytes
+   i) 8 bytes
+   j) 8 bytes
+
+2. a) 0x7ffc32170874
+   b) 0x7ffc32170878
+   c) 0x7ffc3217087c
+   d) 0x7ffc32170880
+   e) 0x7ffc32170884
+
+   a) 0x7ffd34e12f14
+   b) 0x7ffd34e12f18
+   c) 0x7ffd34e12f1c
+   d) 0x7ffd34e12f20
+   e) 0x7ffd34e12f24
+
+   a) 0x7ffda412a284
+   b) 0x7ffda412a288
+   c) 0x7ffda412a28c
+   d) 0x7ffda412a290
+   e) 0x7ffda412a294
+
+   f) The output of each run is different.
+      This is because the address of i
+      is being printed, and the program does
+      not decide the address of i before it runs.
+      The operating system randomly decides the
+      memory addresses during each runtime.
+      Adding values to the pointer changes the memory
+      locations. Since the size of an int is 4,
+      it adds 4 to whatever the current memory address
+      is. As long as the values are being added to the
+      pointer without

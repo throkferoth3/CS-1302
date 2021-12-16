@@ -1,0 +1,16 @@
+Derek Benjamin Lin 811354302
+
+To compile all programs at once:
+    make
+    make all
+    make compile
+
+To compile a specific program:
+    make firstline
+    make lastline
+    make longestline
+
+To clean:
+    make clean
+
+                

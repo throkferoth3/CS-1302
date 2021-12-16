@@ -1,0 +1,43 @@
+#include <iostream>
+#include <cstdlib>
+
+using std::cout;
+using std::endl;
+using namespace std;
+
+int a [2] = {1, 2};
+int k = 1;
+
+int foo() {
+    return k;
+} // foo
+
+const int * bar() {
+    return &a[0];
+} // bar
+
+int * const baz() {
+    return a;
+} // baz
+
+int main() {
+// part (a)
+    // int x = foo();
+    // x++;
+     foo()++;
+     k++
+// part (b)
+//    const int * p1 = bar();
+    // p1++;
+    // (*p1)++;
+    // bar()++;
+    // (*bar())++;
+
+// part (c)
+    const int * p2 = baz();
+    p2++;
+    (*p2)++;
+    baz()++;
+    (*baz())++;
+    return EXIT_SUCCESS;
+} // main

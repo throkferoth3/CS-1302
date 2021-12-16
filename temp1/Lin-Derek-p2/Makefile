@@ -1,0 +1,11 @@
+all: env head tail
+
+compile: env.c head.c tail.c
+	gcc -o env -Wall -pedantic-errors env.c
+	gcc -o head -Wall -pedantic-errors head.c
+	gcc -o tail -Wall -pedantic-errors tail.c
+
+clean:
+	rm -f env
+	rm -f head
+	rm -f tail

@@ -1,0 +1,8 @@
+compile: lab01.cpp
+g++ lab01 -o lab01.cpp
+
+run: compile
+	./lab01
+
+clean:
+	rm -f lab01

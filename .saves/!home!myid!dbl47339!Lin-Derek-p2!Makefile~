@@ -1,0 +1,14 @@
+NAME = env
+NAME = head
+NAME = tail
+FLAGS = -Wall -pedantic-errors
+
+all: env head tail
+
+compile: $(NAME).c
+	gcc -o $(NAME) $(FLAGS) $(NAME).c
+
+clean:
+rm -f $(NAME)
+rm -f $(NAME)
+rm -f $(NAME)

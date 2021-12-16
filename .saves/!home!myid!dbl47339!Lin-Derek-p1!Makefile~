@@ -1,0 +1,13 @@
+CC = g++
+LFLAGS = -Wall -pedantic-errors
+CFLAGS = $(LFLAGS) -c
+
+compile: p1.o Matrix.o
+	$(CC) $(LFLAGS) -o p1 p1.o Matrix.o
+
+run: compile
+	./Matrix
+
+clean:
+	rm -f Matrix
+	rm -f *.o

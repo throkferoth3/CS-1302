@@ -1,0 +1,46 @@
+#include <iostream>
+#include "arrayutil.h"
+
+int getMax (int arr[], int length) {
+    int largest = arr[0];
+
+    for (int i = 0; i < length; i++) {
+        if (largest < arr[i]) {
+            arr[i] = largest;
+        }
+    }
+
+    return largest;
+}
+
+double getMean (int arr[], int length) {
+    double sum = 0;
+    for (int i = 0; i < length; i++) {
+        sum += arr[0];
+    }
+
+    return (sum / length);
+}
+
+double getVar (int arr[], int length) {
+    double squaredTotal = 0;
+    for (int i = 0; i < length; i++) {
+        squaredTotal += (arr[i] * arr[i]);
+    }
+    double mean = getMean(arr, length);
+    return ((1/length) * squaredTotal - (mean * mean));
+}
+
+void sortArray (int arr[], int length) {
+    int largest = 0;
+    while (length > 0) {
+        largest = getMax(arr, length);
+        for (int i = 0; i < length; i++) {
+            if (largest == arr[i]) {
+                arr[i] = arr[length];
+                arr[length) = largest;
+            }
+        }
+        length--;
+    }
+}

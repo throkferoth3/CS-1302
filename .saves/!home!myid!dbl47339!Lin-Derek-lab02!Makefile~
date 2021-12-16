@@ -1,0 +1,15 @@
+all: exclusive primesum endtime
+
+exclusive:
+	g++ -Wall -pedantic-errors -o exclusive exclusive.cpp
+
+primesum:
+	g++ -Wall -pedantic-errors -o primesum primesum.cpp
+
+endtime:
+	g++ -Wall -pedantic-errors -o endtime endtime.cpp
+
+clean:
+	rm -f exclusive
+	rm -f primesum
+	rm -f endtime

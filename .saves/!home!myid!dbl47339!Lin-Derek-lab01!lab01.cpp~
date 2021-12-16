@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+int main() {
+    int k = 0;
+    int* p = &k;
+    cout << *p << endl;
+    ++*p * 10;
+    cout << *p << endl;
+
+    std::cout << "Hello World" << std::endl;
+    return EXIT_SUCCESS;
+}
